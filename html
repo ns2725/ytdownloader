@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Downloader</h1>
+    <input type="text" id="url" placeholder="Paste YouTube link here" />
+    
+    <div class="options">
+      <label><input type="radio" name="format" value="mp3" checked /> MP3</label>
+      <label><input type="radio" name="format" value="mp4" /> MP4</label>
+    </div>
+
+    <button onclick="download()">Download</button>
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
